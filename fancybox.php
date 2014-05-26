@@ -2,10 +2,10 @@
 /*
 Plugin Name: FancyBox2 (fork by The Webists)
 Plugin URI: https://github.com/thewebists/thewebists-fancybox2/
-Description: Enables <a href="http://fancybox.net/">fancybox 2.0.3</a> on all image links including BMP, GIF, JPG, JPEG, and PNG links. Modified version of Fancybox plugin by Kevin Sylvestre to use the new fancybox2.
+Description: Enables <a href="http://fancybox.net/">fancybox 2.1.5</a> on all image links including BMP, GIF, JPG, JPEG, and PNG links. Fork of Fancybox2 plugin by Span (orignally based on Fancybox plugin by Kevin Sylvestre).
 Version: 2.1.5
-Author: Span
-Author URI: http://www.seanrick.com/
+Author: The Webists
+Author URI: http://www.thewebists.com/
 */
 
 if (!defined('WP_CONTENT_URL'))
