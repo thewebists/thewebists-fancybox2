@@ -31,10 +31,10 @@ function fancybox() {
 
 if (!is_admin()) {
 	wp_enqueue_script('jquery');
-	// wp_enqueue_script('jquery.fancybox', WP_PLUGIN_URL.'/fancybox2/jquery.fancybox.js', array('jquery'), '2.1.5'); // Non-minified version of the Fancybox JS file
-	wp_enqueue_script('jquery.fancybox', WP_PLUGIN_URL.'/fancybox2/jquery.fancybox.pack.js', array('jquery'), '2.1.5'); // Minified version of the Fancybox JS file
-	wp_enqueue_script('jquery.easing', WP_PLUGIN_URL.'/fancybox2/jquery.easing.js', array('jquery'), '1.6');
-	wp_enqueue_style('jquery.fancybox', WP_PLUGIN_URL.'/fancybox2/jquery.fancybox.css', false, '2.1.5');
+	// wp_enqueue_script('jquery.fancybox', plugins_url('jquery.fancybox.js'), array('jquery'), '2.1.5'); // Non-minified version of the Fancybox JS file
+	wp_enqueue_script('jquery.fancybox', plugins_url('jquery.fancybox.pack.js', __FILE__ ), array('jquery'), '2.1.5'); // Minified version of the Fancybox JS file
+	wp_enqueue_script('jquery.easing', plugins_url('jquery.easing.js', __FILE__ ), array('jquery'), '1.6');
+	wp_enqueue_style('jquery.fancybox', plugins_url('jquery.fancybox.css' , __FILE__), false, '2.1.5');
 	add_action('wp_head', 'fancybox');
 }
 ?>
